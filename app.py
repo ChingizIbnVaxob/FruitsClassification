@@ -4,6 +4,11 @@ import pathlib
 import plotly.express as ax
 import platform
 
+import pathlib
+
+print(pathlib.__version__)
+
+
 temp = pathlib.PosixPath
 pathlib.PosixPath = pathlib.WindowsPath
 
