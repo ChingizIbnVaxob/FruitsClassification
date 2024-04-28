@@ -4,9 +4,6 @@ import pathlib
 import plotly.express as ax
 import platform
 
-import pathlib
-
-print(pathlib.__version__)
 
 
 temp = pathlib.PosixPath
@@ -16,7 +13,7 @@ pathlib.PosixPath = pathlib.WindowsPath
 
 # streamlit run .\app.py
 # title
-slt.title("Mevalarni aniqlaydi!")
+slt.title("Fruits Classification!")
 
 # image uploader
 file = slt.file_uploader("Image Upload", type=['png', 'jpg', 'jpeg', 'gif'])
