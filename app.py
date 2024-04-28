@@ -14,14 +14,14 @@ pathlib.PosixPath = pathlib.WindowsPath
 slt.title("Mevalarni aniqlaydi!")
 
 # image uploader
-file = slt.file_uploader("Image Upload", type=['png', 'img', 'jpg', 'jpeg', 'gif'])
+file = slt.file_uploader("Image Upload", type=['png', 'jpg', 'jpeg', 'gif'])
 if file:
     slt.image(file)
     # PIL convert
     img = PILImage.create(file)
 
     # model
-    model = load_learner(r"fruits_model.pkl")
+    model = load_learner("fruits_model.pkl")
 
     # prediction
     pred, pred_id, probs = model.predict(img)
